@@ -12,7 +12,7 @@ numpy==1.18.5
 v4l2
 ```
 
-全体の流れは[Jetson セットアップマニュアル](https://docs.google.com/presentation/d/1_k0xrD2JAzbs0CmXLibpOElClcySRwRvlrgityWFmZU/edit#slide=id.gd15f987bf7_0_56)に記載してあります。
+全体の流れは[Jetson セットアップマニュアル](https://docs.google.com/presentation/d/1_k0xrD2JAzbs0CmXLibpOElClcySRwRvlrgityWFmZU/edit#slide=id.gd2481a1571_0_26)に記載してあります。
 
 # 手順
 
