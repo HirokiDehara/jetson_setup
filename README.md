@@ -28,6 +28,13 @@ v4l2
    ```bash
    $ chmod 700 -R scripts run.sh
    ```
+   
+1. Dockerコマンドをsudoなしで実行できるように変更
+   ```bash
+   sudo groupadd docker
+   sudo gpasswd -a $USER docker
+   reboot
+   ```
 
 1. 追加でパッケージをインストールする必要がある場合はここで Dockerfile を編集してください。
 
