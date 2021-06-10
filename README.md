@@ -29,37 +29,18 @@ v4l2
    $ chmod 700 -R scripts run.sh
    ```
    
-1. Dockerコマンドをsudoなしで実行できるように変更
-   ```bash
-   sudo groupadd docker
-   sudo gpasswd -a $USER docker
-   reboot
-   ```
-
-1. 追加でパッケージをインストールする必要がある場合はここで Dockerfile を編集してください。
-
 1. 用意された Dockerfile をビルドします。
 
    ```bash
-   $ ./scripts/docker_build_ml.sh tensorflow
+   $ docker build -t $CONTAINERNAME . 
    ```
-
    "Successfully built xxx"と表示されていればビルド完了です。
-
-   最後に"Successfuly tagged yyy:zzz"と表記されており yyy がイメージ名、zzz がタグ名となっています。
-
-1. 次にビルドしたイメージが上手く動作するかテストします。
-
-   第一引数にテストする環境の名前、第二引数にイメージ名:タグ名を指定すると自動でテストが開始され、パッケージが上手くインストールされているか確認できます。
-
-   ```bash
-   $ ./scripts/docker_test_ml.sh tensorflow l4t-tensorflow:r32.5.0-tf2.3-py3
-   ```
+   
 
 1. 最後にコンテナを走らせて環境構築完了です。
 
    ```bash
-   $ ./run.sh l4t-tensorflow:r32.5.0-tf2.3-py3
+   $ ./run.sh $CONTAINERNAME
    ```
 
 1. 終了する際は以下のコマンドを実行してください。
