@@ -5,10 +5,20 @@
 以下のパッケージを含む環境を構築することができます。
 
 ```python
-tensorflow==2.3.1+nv20.11
+pytorch==1.7.0
+torchvision==0.8.0a0+45f960c
+torchaudio==0.7.0a0+ac17b64
+tensorflow==2.4.0+nv21.5
 TensorRT==7.1.3.0
 PyCUDA==2020.1
-numpy==1.18.5
+CuPy==8.0.0b4
+numpy==1.19.4
+numba==0.52.0
+onnx==1.8.0
+OpenCV==4.1.1
+pandas==1.1.5
+scipy==1.5.4
+sklearn==0.24.0
 v4l2
 ```
 
