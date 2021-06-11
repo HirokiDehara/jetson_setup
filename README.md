@@ -36,15 +36,16 @@ v4l2
 1. ダウンロードしたファイルに実行権限を与えます。
 
    ```bash
-   $ chmod 700 -R scripts run.sh
+   $ chmod 700 -R test run.sh
    ```
    
 1. 用意された Dockerfile をビルドします。
+   $CONTAINERNAME には任意のコンテナ名を記載してください。
 
    ```bash
-   $ docker build -t $CONTAINERNAME . 
+   $ docker build -t $CONTAINERNAME -f Dockerfile.hutzper . 
    ```
-   "Successfully built xxx"と表示されていればビルド完了です。
+   "Successfully built $CONTAINERNAME"と表示されていればビルド完了です。
    
 
 1. 最後にコンテナを走らせて環境構築完了です。
