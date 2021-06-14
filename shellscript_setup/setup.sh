@@ -1,5 +1,5 @@
 #!/bin/bash
-# for JetPack4.5.1
+# for JetPack4.5.1 on Jetson NX
 
 # 必須
 sudo apt update
@@ -35,4 +35,4 @@ pip3 install Cython PyYAML==5.3.1  tqdm==4.41.1
 
 # テスト
 python3 test/tf_test.py
-python3 test/yolov5/detect.py --weights test/yolov5/weights/yolov5s.pt --source test/data/images/zidane.jpg --conf 0.25
+python3 test/yolov5/detect.py --weights test/yolov5/weights/yolov5s.pt --source 0 --conf 0.25
