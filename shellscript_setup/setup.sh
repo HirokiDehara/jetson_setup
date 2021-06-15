@@ -4,7 +4,7 @@
 # 必須
 sudo apt update
 sudo apt upgrade -y 
-sudo apt install -y python3-pip build-essential v4l-utils guvcview
+sudo apt install -y build-essential python3-dev python3-pip v4l-utils guvcview
 sudo pip3 install -U pip testresources setuptools==49.6.0 
 echo 'PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
 echo 'LD_PRELOAD="/usr/lib/aarch64-linux-gnu/libgomp.so.1"' >> ~/.bashrc
