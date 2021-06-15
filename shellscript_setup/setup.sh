@@ -1,5 +1,9 @@
 #!/bin/bash
 # for JetPack4.5.1 on Jetson NX
+if [ $0 != "./install.sh" ]; then
+echo "Please execute under jetson_setup/shellscript_setup"
+exit 1
+fi
 
 # 必須
 sudo apt update
@@ -34,6 +38,11 @@ cd ..
 # YOLOv5に必要なパッケージのインストール
 sudo pip3 install -U scipy==1.4.1
 pip3 install matplotlib==3.3.4 Cython PyYAML==5.3.1  tqdm==4.41.1 seaborn
+
+# v4l2の修正パッチを適用
+wget https://forums.developer.nvidia.com/uploads/short-url/4L6p6Cir0SN8YTDMy1z8vrgU6oF.zip -O nvargus.zip
+unzip nvargus.zip
+sudo cp Topic168303_Apr21_libv4l2_nvargus.so /usr/lib/aarch64-linux-gnu/tegra/libv4l2_nvargus.so
 
 # テスト
 python3 test/tf_test.py
