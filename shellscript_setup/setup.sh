@@ -36,4 +36,4 @@ pip3 install Cython PyYAML==5.3.1  tqdm==4.41.1
 
 # テスト
 python3 test/tf_test.py
-python3 test/yolov5/detect.py --weights test/yolov5/weights/yolov5s.pt --source 0 --conf 0.25
+python3 test/yolov5_test/detect.py --weights test/yolov5_test/weights/yolov5s.pt --source 0 --conf 0.25
