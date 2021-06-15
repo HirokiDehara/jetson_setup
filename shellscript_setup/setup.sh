@@ -24,7 +24,7 @@ pip3 install torch-1.7.0-cp36-cp36m-linux_aarch64.whl
 
 ## Torchvision==0.8.0
 sudo apt install -y libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
-pip3 install pillow==5.1.0
+pip3 install pillow==8.2.0
 git clone --branch v0.8.1 https://github.com/pytorch/vision torchvision
 cd torchvision
 export BUILD_VERSION=0.8.0
@@ -32,8 +32,8 @@ sudo python3 setup.py install
 cd ..
 
 # YOLOv5に必要なパッケージのインストール
-sudo pip3 install -U matplotlib==3.2.2 scipy==1.4.1
-pip3 install Cython PyYAML==5.3.1  tqdm==4.41.1
+sudo pip3 install -U scipy==1.4.1
+pip3 install matplotlib==3.3.4 Cython PyYAML==5.3.1  tqdm==4.41.1 seaborn
 
 # テスト
 python3 test/tf_test.py
