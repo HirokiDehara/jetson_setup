@@ -1,6 +1,6 @@
 #!/bin/bash
 # for JetPack4.5.1 on Jetson NX
-if [ $0 != "./install.sh" ]; then
+if [ $0 != "./setup.sh" ]; then
 echo "Please execute under jetson_setup/shellscript_setup"
 exit 1
 fi
