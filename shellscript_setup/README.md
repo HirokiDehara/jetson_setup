@@ -21,7 +21,7 @@ https://www.balena.io/etcher
 カメラにつないだ状態で、ホームディレクトリで以下を実行する。
 ```
 git clone https://github.com/Hutzper-inc/jetson_setup
-cd jetson_setup/shellscript
+cd jetson_setup/shellscript_setup
 ./setup.sh
 ```
 
