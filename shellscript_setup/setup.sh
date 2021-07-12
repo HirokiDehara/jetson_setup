@@ -44,6 +44,28 @@ wget https://forums.developer.nvidia.com/uploads/short-url/4L6p6Cir0SN8YTDMy1z8v
 unzip nvargus.zip
 sudo cp Topic168303_Apr21_libv4l2_nvargus.so /usr/lib/aarch64-linux-gnu/tegra/libv4l2_nvargus.so
 
+# firefox
+sudo apt install iceweasel
+
+# ricty-diminished
+wget -O ricty.tar.gz https://github.com/edihbrandon/RictyDiminished/archive/refs/tags/3.2.3.tar.gz
+tar -zxvf ricty.tar.gz
+mkdir ~/.fonts
+cp RictyDiminished-3.2.3/*.ttf ~/.fonts/
+
+# vscode
+wget -O VSCode-linux-arm64.tar.gz 'https://code.visualstudio.com/sha/download?build=insider&os=linux-arm64'
+tar -zxvf VSCode-linux-arm64.tar.gz
+mv VSCode-linux-arm64 ~/
+echo 'PATH="$PATH:~/VSCode-linux-arm64/bin"' >> ~/.bashrc
+source ~/.bashrc
+
 # テスト
 python3 test/tf_test.py
 python3 test/yolov5_test/detect.py --weights test/yolov5_test/weights/yolov5s.pt --source 0 --conf 0.25
+
+# ibus-mozc
+sudo apt install ibus-mozc
+ibus restart
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'jp'), ('ibus', 'mozc-jp')]"
+sudo reboot
