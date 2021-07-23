@@ -60,6 +60,10 @@ mv VSCode-linux-arm64 ~/
 echo 'PATH="$PATH:~/VSCode-linux-arm64/bin"' >> ~/.bashrc
 source ~/.bashrc
 
+# google-drive-ocamlfuse
+sudo add-apt-repository ppa:alessandro-strada/ppa
+sudo apt install google-drive-ocamlfuse
+
 # テスト
 python3 test/tf_test.py
 python3 test/yolov5_test/detect.py --weights test/yolov5_test/weights/yolov5s.pt --source 0 --conf 0.25
