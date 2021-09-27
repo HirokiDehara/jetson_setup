@@ -1,15 +1,19 @@
 # やること一覧
 ## 1. JetPack4.5.1のダウンロード
-こちらからJetPack4.5.1のイメージをダウンロードして解凍する。  
-https://developer.nvidia.com/embedded/jetpack
+こちらからJetPack4.5.1のイメージをダウンロードして解凍する。
+（5GBくらいあって毎回ダウンロードするのはめんどいので、専用のPCを用意しといた方がいいかも？）
+https://developer.nvidia.com/jetpack-sdk-451-archive
 
-なお、1~3の手順はnvidia公式の手順がもっとも正確なため、こちらも参照すること。  
-https://developer.nvidia.com/embedded/learn/get-started-jetson-xavier-nx-devkit#write
+Xavier NX, Nano, Nano 2GB の中から、今回セットアップする製品と同一のものを選択してダウンロード。
+![setup](https://user-images.githubusercontent.com/60293562/134911421-9a1ecf7c-feb5-41cd-9d3a-d7ef6e44a2c2.png)
+
+
 ## 2. OSイメージの書き込み
 まず、以下のSD Card Formatterというツールを使ってSDカードをフォーマットしておく。  
-https://www.sdcard.org/downloads/formatter_4/eula_windows/
+https://www.sdcard.org/downloads/formatter_4/eula_windows/  
+フォーマットは新品のSDでも行っておいた方がよい。
 
-次に、Etcherを使って1.でダウンロードしたosイメージをSDカードに書き込む。  
+次に、Etcherを使って1.でダウンロードしたosイメージをSDカードに書き込む。   
 Etcherはこちら。  
 https://www.balena.io/etcher
 
