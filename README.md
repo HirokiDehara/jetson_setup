@@ -1,10 +1,10 @@
 # やること一覧
 ## 1. JetPack4.5.1のダウンロード
-こちらからJetPack4.5.1のイメージをダウンロードして解凍する。
+こちらからJetPack4.5.1のイメージをダウンロードして解凍する。  
 （5GBくらいあって毎回ダウンロードするのはめんどいので、専用のPCを用意しといた方がいいかも？）
 https://developer.nvidia.com/jetpack-sdk-451-archive
 
-Xavier NX, Nano, Nano 2GB の中から、今回セットアップする製品と同一のものを選択してダウンロード。
+Xavier NX, Nano, Nano 2GB の中から、今回セットアップする製品と同一のものを選択してダウンロード。  
 ![setup](https://user-images.githubusercontent.com/60293562/134911421-9a1ecf7c-feb5-41cd-9d3a-d7ef6e44a2c2.png)
 
 
