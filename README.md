@@ -34,7 +34,7 @@ cd jetson_setup/shellscript_setup
 yolov5_testのディレクトリの中身は6/15にgit cloneでとってきたもの。  
 requirements.txtを無効にしたのと、重みを削除した他は特に手を加えていない
 
-#追加
+# 追加
 ## 6. DWServiceのセットアップを実行
 カメラにつないだ状態で、ホームディレクトリで以下を実行する。
 ```
