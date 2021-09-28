@@ -39,7 +39,6 @@ https://www.dwservice.net/en/download.html からLinux(Generic)を選択して�
 ```
 chmod 777 dwagent.sh
 sudo ./dwagent.sh
-
 ```
 アカウントとパスワードはDWServiceに登録しているものを入力する。（その都度、確認してください！）
 
