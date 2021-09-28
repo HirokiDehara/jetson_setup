@@ -29,10 +29,43 @@ cd jetson_setup/shellscript_setup
 ./setup.sh
 ```
 
+## 5. DWServiceのセットアップを実行
+カメラにつないだ状態で、ホームディレクトリで以下を実行する。
+```
+git clone https://github.com/Hutzper-inc/jetson_setup
+cd jetson_setup/shellscript_setup
+./setup.sh
+```
+
+## 6. 自動ログインの設定
+カメラにつないだ状態で、ホームディレクトリで以下を実行する。
+```
+git clone https://github.com/Hutzper-inc/jetson_setup
+cd jetson_setup/shellscript_setup
+./setup.sh
+```
+
 ## 5. おわり
 すべてうまくインストールできていればYOLOv5のデモがはじまる、はず。  
 yolov5_testのディレクトリの中身は6/15にgit cloneでとってきたもの。  
 requirements.txtを無効にしたのと、重みを削除した他は特に手を加えていない
+
+
+## 6. DWServiceのセットアップを実行
+カメラにつないだ状態で、ホームディレクトリで以下を実行する。
+```
+git clone https://github.com/Hutzper-inc/jetson_setup
+cd jetson_setup/shellscript_setup
+./setup.sh
+```
+
+## 7. 自動ログインの設定
+カメラにつないだ状態で、ホームディレクトリで以下を実行する。
+```
+git clone https://github.com/Hutzper-inc/jetson_setup
+cd jetson_setup/shellscript_setup
+./setup.sh
+```
 
 # 注意点
 * ぜんぶで1時間くらいかかるので覚悟すること
