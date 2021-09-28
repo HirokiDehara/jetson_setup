@@ -65,10 +65,9 @@ sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt install google-drive-ocamlfuse
 
 # DWService
-curl https://www.dwservice.net/download/dwagent_generic.sh -o ./downloads/dwagent.sh
-cd 
-chmod 777 dwagent.sh
-sudo ./dwagent.sh
+wget https://www.dwservice.net/download/dwagent_generic.sh
+chmod 777 dwagent_generic.sh
+sudo ./dwagent_generic.sh
 
 # 自動ログイン
 sudo systemctl get-default
