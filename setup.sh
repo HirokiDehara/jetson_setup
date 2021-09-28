@@ -69,11 +69,6 @@ wget https://www.dwservice.net/download/dwagent_generic.sh
 chmod 777 dwagent_generic.sh
 sudo ./dwagent_generic.sh
 
-# 自動ログイン
-sudo systemctl get-default
-sudo systemctl set-default multi-user.target
-
-
 # テスト
 python3 test/tf_test.py
 python3 test/yolov5_test/detect.py --weights test/yolov5_test/weights/yolov5s.pt --source 0 --conf 0.25
