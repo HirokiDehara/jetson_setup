@@ -35,13 +35,15 @@ yolov5_testのディレクトリの中身は6/15にgit cloneでとってきた�
 requirements.txtを無効にしたのと、重みを削除した他は特に手を加えていない
 
 # 追加
-## 6. DWServiceのセットアップを実行（修正中）
-カメラにつないだ状態で、ホームディレクトリで以下を実行する。
+## 6. DWServiceのセットアップを実行
+https://www.dwservice.net/en/download.html からLinux(Generic)を選択してダウンロード（先にダウンロード先を指定した方がわかりやすい）
+ダウンロード先のディレクトリで以下を実行
 ```
-ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
-ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+chmod 777 dwagent.sh
+sudo ./dwagent.sh
 
 ```
+
 
 ## 7. 自動ログインの設定（修正中）
 DesktopでSystem Settingsを開き、User AccountのAutomatic LoginをONにする
