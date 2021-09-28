@@ -35,7 +35,7 @@ yolov5_testのディレクトリの中身は6/15にgit cloneでとってきた�
 requirements.txtを無効にしたのと、重みを削除した他は特に手を加えていない
 
 # 追加
-## 6. DWServiceのセットアップを実行
+## 6. DWService（遠隔操作ツール）のセットアップ
 https://www.dwservice.net/en/download.html からLinux(Generic)を選択してダウンロード（先にダウンロード先を指定した方がわかりやすい）
 ダウンロード先のディレクトリで以下を実行
 ```
@@ -43,9 +43,10 @@ chmod 777 dwagent.sh
 sudo ./dwagent.sh
 
 ```
+アカウントとパスワードはDWServiceに登録しているものを入力する。（その都度、確認してください！）
 
 
-## 7. 自動ログインの設定（修正中）
+## 7. 自動ログインの設定
 DesktopでSystem Settingsを開き、User AccountのAutomatic LoginをONにする
 
 
