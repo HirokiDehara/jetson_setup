@@ -64,6 +64,11 @@ source ~/.bashrc
 sudo add-apt-repository ppa:alessandro-strada/ppa
 sudo apt install google-drive-ocamlfuse
 
+# DWService
+wget https://www.dwservice.net/download/dwagent_generic.sh
+chmod 777 dwagent_generic.sh
+sudo ./dwagent_generic.sh
+
 # テスト
 python3 test/tf_test.py
 python3 test/yolov5_test/detect.py --weights test/yolov5_test/weights/yolov5s.pt --source 0 --conf 0.25
