@@ -9,8 +9,8 @@ fi
 umask 0006
 echo 'umask 0006' >> ~/.bashrc
 
-#jetson_setupの中身を他ユーザーから読み取れないようにする
-chmod o-rwx -R ../
+#home以下を他ユーザーから読み取れないようにする
+chmod o-rwx -R ~/
 
 # 必須
 sudo apt update
