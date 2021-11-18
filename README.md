@@ -25,9 +25,20 @@ https://www.balena.io/etcher
 カメラにつないだ状態で、ホームディレクトリで以下を実行する。
 ```
 git clone https://github.com/Hutzper-inc/jetson_setup
-cd jetson_setup/shellscript_setup
+cd jetson_setup
 ./setup.sh
 ```
+
+インストールされるものの一部:
+* vscode
+* ibus-mozc
+* python3-pip
+* build-essential
+* v4l-utils 
+* guvcview
+* firefox 
+* DWService
+* tensorflow, torch, torchvision etc...
 
 すべてうまくインストールできていればYOLOv5のデモがはじまる、はず。  
 yolov5_testのディレクトリの中身は6/15にgit cloneでとってきたもの。  
