@@ -5,12 +5,12 @@ echo "Please execute under jetson_setup"
 exit 1
 fi
 
-#新規作成されるファイルを他ユーザーから読み取れないようにする
+#新規作成されるファイルについて、他ユーザーから読み書きできないようにする
 umask 0006
 echo 'umask 0006' >> ~/.bashrc
 
-#home以下を他ユーザーから読み取れないようにする
-chmod o-rwx -R ~/
+#home以下を他ユーザーから読み書きできないようにする
+chmod o-rw -R ~/
 
 # 必須
 sudo apt update
