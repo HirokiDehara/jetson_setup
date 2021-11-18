@@ -7,6 +7,7 @@ fi
 
 #新規作成されるファイルを他ユーザーから読み取れないようにする
 umask 0006
+echo 'umask 0006' >> ~/.bashrc
 
 #jetson_setupの中身を他ユーザーから読み取れないようにする
 chmod o-rwx -R ../
