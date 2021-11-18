@@ -5,6 +5,12 @@ echo "Please execute under jetson_setup"
 exit 1
 fi
 
+#新規作成されるファイルを他ユーザーから読み取れないようにする
+umask 0006
+
+#jetson_setupの中身を他ユーザーから読み取れないようにする
+chmod o-rwx -R ../
+
 # 必須
 sudo apt update
 sudo apt upgrade -y 
